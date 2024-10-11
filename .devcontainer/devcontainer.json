@@ -1,0 +1,20 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/docker-in-docker
+{
+	"name": "Devcontainer-Traefik",
+	"dockerComposeFile": "docker/devcontainer/compose-devcontainer.yml",
+	"service": "devcontainer",
+	"runServices": ["devcontainer"],
+	"workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+	"remoteUser": "vscode",
+
+	"features": {
+		"ghcr.io/devcontainers/features/docker-in-docker:2": {}
+	}
+
+	// Use 'forwardPorts' to make a list of ports inside the container available locally.
+	// "forwardPorts": [],
+
+	// Use 'postCreateCommand' to run commands after the container is created.
+	// "postCreateCommand": "docker --version",
+}
