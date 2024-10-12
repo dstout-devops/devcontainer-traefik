@@ -12,6 +12,6 @@ updates:
      interval: daily
 
  - package-ecosystem: "docker"
-   directory: ".devcontainer"
+   directory: ".devcontainer/docker"
    schedule:
      interval: daily
